@@ -124,15 +124,25 @@ li {
   font-style: italic;
 }
 
-#map {
-
-    margin-right: 10%;
+.map-div {
     max-width: 100%;
-    @media (max-width:400px) {
-        max-width:400px;
-    }
-    
+    overflow: hidden; /* Prevent horizontal scrolling */
 }
+
+#map {
+    width: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 400px) {
+    #map {
+        max-width: 100%;
+        margin-right: 0;
+    }
+}
+
 
 #textkort {
     border:20px solid rgba(241, 146, 153, 0.634) ;
