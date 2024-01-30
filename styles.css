@@ -103,7 +103,7 @@ li {
     }
 
     @media (max-width: 390px) {
-        height: 390px; /* Further adjust the height for even smaller screens */
+        height: 230px; /* Further adjust the height for even smaller screens */
     }
 }
 
