@@ -89,7 +89,7 @@ li {
 
 #div-bg {
     background-image: url('bild_body.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center; /* Adjust this based on your preference */
     scale: 0.97 ;
     width: 100%;
