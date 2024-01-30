@@ -127,6 +127,10 @@ li {
 #map {
 
     margin-right: 10%;
+    max-width: 100%;
+    @media (max-width:540px) {
+        max-width:400px;
+    }
     
 }
 
