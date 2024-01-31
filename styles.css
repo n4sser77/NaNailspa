@@ -43,7 +43,6 @@ nav a {
 }
 
 section {
-    padding: 20px;
     margin: 0 auto;
 }
 
@@ -107,6 +106,14 @@ li {
     }
 }
 
+#div-bg-oppet {
+    height: 250px; /* Adjust the height as needed */
+    background-image: url('bg-oppet.png'); /* Replace 'header-background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire header with the image */
+    background-position: center; /* Center the image */
+
+ 
+}
 
 
 .container {
