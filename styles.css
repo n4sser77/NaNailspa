@@ -14,7 +14,7 @@ h2 {
 
 header {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #9c4a4a;
+    color: #954f4f;
     text-align: center;
     padding: 1em;
     height: 250px; /* Adjust the height as needed */
@@ -63,7 +63,7 @@ ul {
 }
 
 li {
-    background-color: #f5c4db; 
+    background-color: #b85e77; 
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
@@ -111,8 +111,19 @@ li {
     background-image: url('bg-oppet.png'); /* Replace 'header-background.jpg' with the path to your image */
     background-size: cover; /* Cover the entire header with the image */
     background-position: center; /* Center the image */
-
+    color: #954f4f;
+    
  
+}
+#div-oppet-text {
+    margin-left: 10px;
+    justify-content: center;
+
+}
+
+#div-oppet-header {
+    padding-top: 5px;
+    
 }
 
 
@@ -153,7 +164,7 @@ li {
 
 
 #textkort {
-    border:20px solid rgba(241, 146, 153, 0.634) ;
+    border:10px solid rgba(164, 115, 118, 0.634) ;
     border-radius: 1px;
 
     
