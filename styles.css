@@ -54,15 +54,13 @@ section {
 }
 
 #div-bg {
-    margin-top: 15px;
-    padding-top: 25px;
-    scale: 0.9899;
     background-image: url('bild_body.png');
     background-size: cover;
     background-position: center; /* Adjust this based on your preference */
     background-repeat: no-repeat;
+    margin: 0 auto;
     height: 500px;
-    width:100%;
+
     /* Additional styles for the div can be added here */
 
 }
