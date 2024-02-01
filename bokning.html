@@ -6,65 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NA Nailspa</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
     <header>
-        <h1>NA Nailspa</h1>
-        <p>Välkommen till NA Nailspa</p>
+        <h1 class="playfair-display-header">NA Nailspa</h1>
+        <p> välkommen till Na Nailspa</p>
+        <div class="btn-div">
+            <a class="btn" href="bokning.html"><p><strong>Boka nu</strong><p></a>
+
+        </div>
+        
+
     </header>
 
     <nav>
         <a href="index.html">Hem</a>
-        <a href="bokning.html">Tjänster</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a href="bokning.html">Behandlingar</a>
+        <a href="inspo.html">Inspo</a>
+        <a href="#contact">Kontakt</a>
     </nav>
+    
+    <div id="div-bg-bokning">
 
-    <section id="hem">
-        <h2>Boka tid hos oss</h2>
-    </section>
+        <div>
+            <h3>Nagelförlängning med gele</h3>
 
-    <section id="services">
-        <div class="container">
-        <h3> Naglar</h3>
-        <ul> 
-            <li>
-                <strong>Nytt set färgombre/chrome</strong> 
-                <img class="bokningsbilder" src="färgombre.png" alt="Bild till Nytt set färgombre/chrome">
+            <button class="accordion">Shell-lack färg/fransk</button>
+            <div class="panel">
+              <p>Pris fr.450kr Påfyllning 450kr</p>
+            </div>
+            
+            <button class="accordion">Gele naturell</button>
+            <div class="panel">
+              <p>Pris fr. 520kr Påfyllning 480kr </p>
+            </div>
+            
+            <button class="accordion">Gele med fransk / glitter / färg</button>
+            <div class="panel">
+              <p>Pris fr.550kr Påfyllning 500kr</p>
+            </div>
+
+            <button class="accordion">Fransk ombré</button>
+            <div class="panel">
+              <p>Pris fr.550kr Påfyllning 530kr</p>
                
-            </li>
-
-
-            <li>
-               <strong>Gelé med färg/glitter</strong>
-                <img class="bokningsbilder" src="glitter.png" alt="Bild till gele med färg/glitter">
-                
-            </li>
-
-            <li>
-              <strong>Nytt set Ombré</strong> 
-              <img class="bokningsbilder" src="ombre.png" alt="bild till Nytt set Ombré">
-            </li>
+            </div>
+            
+        </div>
+        <h3>Fransförlängning</h3>
         
-            <!-- Add more services as needed -->
-        </ul>
+        <button class="accordion">Singelfransar</button>
+        <div class="panel">
+          <p>Pris 700kr Påfyllning 600kr</p>
+        </div>
+        
+        <button class="accordion">Mixfransar</button>
+        <div class="panel">
+          <p>Pris 850kr Påfyllning 750kr </p>
+        </div>
+        
+        <button class="accordion">Volymfransar</button>
+        <div class="panel">
+          <p>Pris 950kr Påfyllning 750kr</p>
+        </div>
+
+        <button class="accordion">Borttagning</button>
+        <div class="panel">
+          <p>Pris 200kr</p>
+        </div>
+        
+        
+        <h3>Hand & Fotvård</h3>
+        
+        <button class="accordion">Spa manikyr</button>
+        <div class="panel">
+          <p>Pris 300kr</p>
+        </div>
+        
+        <button class="accordion">Spa pedikyr</button>
+        <div class="panel">
+          <p>Pris 500kr </p>
+        </div>
+        
+        <button class="accordion">Spa pedikyr & shellack</button>
+        <div class="panel">
+          <p>Pris 600kr</p>
+        </div>
+
     </div>
 
-        <h3> Fransar</h3>
-        <ul> 
-            <li>Nytt set singelfransar</li>
-            <li>Nytt set mixfransar</li>
-            <li>Nytt set volymfransar</li>
-            <li>Påfyllning</li>
-            
-            <!-- Add more services as needed -->
-        </ul>
-    </section>
+   
 
     <!-- Add other sections as needed -->
-
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -46,41 +46,7 @@ section {
     margin: 0 auto;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background-color: #b85e77; 
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    text-align: center;
-    margin-left: 40px;
-    margin-right:60px
-}
-
-.bokningsbilder {
-    max-width: 100px; /* Adjust the size as needed */
-            height: auto;
-            border-radius: 5px;
-            margin-right: 10px;
-}
 
 .hembilder {
     max-width: fit-content ;
@@ -112,12 +78,23 @@ li {
     background-size: cover; /* Cover the entire header with the image */
     background-position: center; /* Center the image */
     color: #954f4f;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+
+    @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
     
  
-}
+
 #div-oppet-text {
     margin-left: 10px;
-    justify-content: center;
+    position: relative;
+    left: 2%;
+    top: 0;
+    bottom: 0;
 
 }
 
@@ -144,8 +121,9 @@ li {
 }
 
 .map-div {
-    max-width: 100%;
+    max-width: 80%;
     overflow: hidden; /* Prevent horizontal scrolling */
+    margin: 0 auto;
 }
 
 #map {
@@ -155,10 +133,9 @@ li {
     margin-left: auto;
 }
 
-@media (max-width: 400px) {
-    #map {
+@media (max-width: 800px) {
+    .map-div {
         max-width: 100%;
-        margin-right: 0;
     }
 }
 
@@ -170,3 +147,75 @@ li {
     
 
 }
+
+.btn-div {
+    
+    text-align: center; /* Center the button within the container */
+}
+
+.btn {
+    font-family:'Times New Roman', Times, serif;
+    background-color:  #d8a8a8;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #952626; /* Set text color to contrast with the background */
+    text-decoration: none; /* Remove default underline for links */
+    display: inline-block; /* Make the button a block element */
+    border-radius: 5px;
+}
+
+#bild-oppet {
+    border-radius: 100%;
+    max-height: 160px;
+    right: 2%;
+    top: 20%;
+    position: absolute;
+    
+}
+
+#hitta-oss-div {
+    padding-block: 5px;
+    background-color: #eacdcd;
+    max-width: 80%;
+    margin: 0 auto;
+    color: white;
+
+
+    @media (max-width: 800px) {
+        max-width: 100%;
+    
+    }
+}
+
+#div-bg-bokning {
+    background-image: url(bokning.png);
+    padding: 5px;
+    height: 225px; /* Adjust the height as needed */
+    background-size: cover; /* Cover the entire header with the image */
+    background-position: center; /* Center the image */
+}
+    
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
