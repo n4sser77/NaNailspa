@@ -67,7 +67,7 @@ section {
         height: 400px; /* Adjust the height for smaller screens */
     }
 
-    @media (max-width: 390px) {
+    @media (max-width: 900px) {
         height: 230px; /* Further adjust the height for even smaller screens */
     }
 }
