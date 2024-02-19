@@ -39,7 +39,7 @@ function AppointmentForm() {
           ))}
         </select>
       </label>
-      <input className='appointment-btn' type="submit" value="Schedule Appointment" />
+      <input className='appointment-btn' type="submit" value="Bekräfta tid" />
     </form>
 
   );

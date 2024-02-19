@@ -4,9 +4,6 @@ const livereload = require('livereload');
 const app = express();
 const port = process.env.PORT || 3001;
 
-// Connect to the database
-connectDB();
-
 // Serve static files from the static-site directory
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'public/static-site', 'page1.html'));
