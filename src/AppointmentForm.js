@@ -31,7 +31,7 @@ function AppointmentForm() {
       />
 
       <label className='appointment-options'>
-        Time:
+        Tid:
         <select className='timeOptions' value={time} onChange={e => setTime(e.target.value)} required>
           <option value="">Välj en tid</option>
           {tillgängligaTider.map((time, index) => (
