@@ -15,6 +15,9 @@ function App() {
       <p>Lördag: 10:00 - 16:00</p>
       <p>Söndag: 11:00 - 16:00 </p>
       <h2>Adress</h2>
+      <p>
+      Västra Storgatan 14, 611 31 Nyköping
+      </p>
 
     </div>
     

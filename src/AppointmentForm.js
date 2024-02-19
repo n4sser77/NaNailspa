@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
+import { sv } from 'date-fns/locale';
 import 'react-calendar/dist/Calendar.css';
 import './AppointmentForm.css';
 
@@ -28,6 +29,7 @@ function AppointmentForm() {
     <Calendar
         onChange={onChange}
         value={date}
+        locale={sv}
       />
 
       <label className='appointment-options'>
