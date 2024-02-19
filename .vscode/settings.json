@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled",
+                "ssl": {}
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "na_nailspa_user",
+            "database": "na_nailspa_db",
+            "username": "na_nailspa_user",
+            "password": "na_nailspa123"
+        }
+    ]
+}
