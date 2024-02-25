@@ -19,7 +19,7 @@ header {
     margin: 0;
     padding: 0;
     height: 250px; /* Adjust the height as needed */
-    background-image: url('/images/banner_bg.png');
+    background-image: url('../images/banner_bg.png');
     background-size: cover; /* Cover the entire header with the image */
     background-position: center; /* Center the image */
     color: rgb(137, 62, 62); /* Set text color for better readability */
@@ -54,7 +54,7 @@ section {
 }
 
 #div-bg {
-    background-image: url('/images/bild_body.png');
+    background-image: url('../images/bild_body.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -86,7 +86,7 @@ section {
 
 #div-bg-oppet {
     height: 250px; /* Adjust the height as needed */
-    background-image: url('/images/bg-oppet.png'); /* Replace 'header-background.jpg' with the path to your image */
+    background-image: url('../images/bg-oppet.png'); /* Replace 'header-background.jpg' with the path to your image */
     background-size: cover; /* Cover the entire header with the image */
     background-position: center; /* Center the image */
     color: #954f4f;
@@ -206,7 +206,7 @@ section {
 
 
 #div-bg-bokning {
-    background-image: url(/images/bokning.png);
+    background-image: url(../images/bokning.png);
     padding: 5px;
     height: 225px; /* Adjust the height as needed */
     background-size: cover; /* Cover the entire header with the image */
@@ -239,7 +239,7 @@ section {
   }
 
   #bg-inspo-fransar {
-    background-image: url(/images/upd_fransar.png);
+    background-image: url(../images/upd_fransar.png);
     padding: 5px;
     background-size: contain; /* Cover the entire header with the image */
     background-position: center; /* Center the image */
@@ -261,7 +261,7 @@ section {
 }
 
   #bg-inspo-fargombre {
-    background-image: url(/images/farg_ombre.png);
+    background-image: url(../images/farg_ombre.png);
     padding: 5px;
     background-size: contain; /* Cover the entire header with the image */
     background-position: center; /* Center the image */
@@ -283,7 +283,7 @@ section {
 }
 
 #bg-inspo-fransk {
-    background-image: url(/images/fransk_ombre.png);
+    background-image: url(../images/fransk_ombre.png);
     padding: 5px;
     background-size: contain; /* Cover the entire header with the image */
     background-position: center; /* Center the image */
@@ -306,7 +306,7 @@ section {
 
 
 #bg-inspo-design {
-    background-image: url(/images/design.png);
+    background-image: url(../images/design.png);
     padding: 5px;
     background-size: contain; /* Cover the entire header with the image */
     background-position: center; /* Center the image */
@@ -330,7 +330,7 @@ section {
 
 
 #bg-inspo-pedikyr {
-    background-image: url(pedikyr.png);
+    background-image: url(../images/pedikyr.png);
     padding: 5px;
     background-size: contain; /* Cover the entire header with the image */
     background-position: center; /* Center the image */
@@ -351,3 +351,17 @@ section {
     }
 }
 
+.boka {
+    background-color: #d8a8a8;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 28px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+.boka:hover {
+    background-color: #9b4c4cdb;
+    color: #12d4ffda;
+}

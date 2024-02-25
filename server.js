@@ -4,21 +4,16 @@ const livereload = require('livereload');
 const app = express();
 const port = process.env.PORT || 3002;
 
-// Serve static files from the static-site directory
+
+// Serve the static files
 app.get('/', function(req, res) {
+    app.use(express.static(path.join(__dirname, 'public/static-site')));
     res.sendFile(path.join(__dirname, 'public/static-site', 'page1.html'));
 });
 
-app.use('/', express.static(path.join(__dirname, 'public/static-site')));
-
-app.use('/', express.static(path.join(__dirname, 'public/')));
-
-
-// Serve the React app 
-
-
-app.use(express.static(path.join(__dirname, 'build')));
-app.get('*', function(req, res) {
+// Serve the React app files
+app.get('/app*', function(req, res) {
+    app.use(express.static(path.join(__dirname, 'build')));
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
