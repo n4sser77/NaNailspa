@@ -43,10 +43,6 @@ nav a {
     margin: 0 1em;
 }
 
-section {
-    
-}
-
 
 
 .hembilder {
@@ -352,12 +348,13 @@ section {
 }
 
 .boka {
-    background-color: #d8a8a8;
+    background-color: rgb(178, 35, 35);
     padding: 10px;
     color: #fff;
     border-radius: 5px;
-    font-size: 28px;
+    font-size: 35px;
     text-align: center;
+
     transition: background-color 0.3s ease, color 0.3s ease;
 
 }

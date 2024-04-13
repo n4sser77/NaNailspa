@@ -6,7 +6,9 @@ import './AppointmentForm.css';
 import { Form } from 'react-router-dom';
 
 function AppointmentForm() {
-  const [behandling, setTitle] = useState('');
+    //Access treatment from session storage
+    const selectedTreatment = sessionStorage.getItem('selectedTreatment');
+
   const [time, setTime] = useState('');
   const [date, setDate] = React.useState(new Date());
   const [currentDateTime, setCurrentDateTime] = useState(new Date().toLocaleString({ year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric' }));
@@ -25,14 +27,34 @@ function AppointmentForm() {
     phone
   };
 
+  const formData = {time, date, name, email, phone, selectedTreatment}
+
 
   const [tillgängligaTider, setTillgängligaTider] = useState(["09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00"]);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log('Date submitted ${currentDate}');
+    console.log(`Date submitted ${currentDateTime}`);
 
-    alert(`Appointment set for ${behandling} on ${date.toLocaleDateString('en-CA')} at ${time} submitted: ${currentDateTime}, by ${JSON.stringify(userData)}`);
+    alert(`Appointment set for ${selectedTreatment} on ${date.toLocaleDateString('en-CA')} at ${time} submitted: ${currentDateTime}, by ${JSON.stringify(userData)}`);
+
+    try {
+      const response = await fetch('/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        console.log('Form submitted successfully!');
+      } else {
+        console.error('Failed to submit form');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   return (
